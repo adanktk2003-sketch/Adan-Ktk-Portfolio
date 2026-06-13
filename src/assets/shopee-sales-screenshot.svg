@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#f8fafc" />
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22c55e" />
+      <stop offset="100%" stop-color="#0f766e" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="720" rx="40" fill="url(#bg)" stroke="#e2e8f0" stroke-width="2" />
+  <rect x="60" y="60" width="300" height="72" rx="20" fill="#0f172a" />
+  <text x="90" y="110" fill="#f8fafc" font-family="Inter, sans-serif" font-size="32" font-weight="700">All Ads Performance</text>
+  <rect x="60" y="170" width="520" height="164" rx="28" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" />
+  <text x="90" y="220" fill="#0f172a" font-family="Inter, sans-serif" font-size="24" font-weight="700">Impressions</text>
+  <text x="90" y="270" fill="#0f172a" font-family="Inter, sans-serif" font-size="42" font-weight="800">946.2k</text>
+  <text x="320" y="220" fill="#0f172a" font-family="Inter, sans-serif" font-size="24" font-weight="700">Clicks</text>
+  <text x="320" y="270" fill="#0f172a" font-family="Inter, sans-serif" font-size="42" font-weight="800">30.3k</text>
+  <text x="560" y="220" fill="#0f172a" font-family="Inter, sans-serif" font-size="24" font-weight="700">ROAS</text>
+  <text x="560" y="270" fill="#0f172a" font-family="Inter, sans-serif" font-size="42" font-weight="800">6.68</text>
+  <rect x="60" y="360" width="1080" height="300" rx="28" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" />
+  <path d="M100 620 C220 520 320 540 420 500 C520 460 620 490 720 470 C820 450 900 520 1000 500" fill="none" stroke="url(#line)" stroke-width="18" stroke-linecap="round" />
+  <text x="90" y="400" fill="#475569" font-family="Inter, sans-serif" font-size="20">05/05</text>
+  <text x="260" y="400" fill="#475569" font-family="Inter, sans-serif" font-size="20">09/05</text>
+  <text x="420" y="400" fill="#475569" font-family="Inter, sans-serif" font-size="20">13/05</text>
+  <text x="580" y="400" fill="#475569" font-family="Inter, sans-serif" font-size="20">17/05</text>
+  <text x="740" y="400" fill="#475569" font-family="Inter, sans-serif" font-size="20">21/05</text>
+  <text x="900" y="400" fill="#475569" font-family="Inter, sans-serif" font-size="20">25/05</text>
+  <text x="1060" y="400" fill="#475569" font-family="Inter, sans-serif" font-size="20">02/06</text>
+</svg>
