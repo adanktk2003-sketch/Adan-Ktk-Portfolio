@@ -545,7 +545,7 @@ function Platforms() {
         <div className="text-center text-xs uppercase tracking-[0.3em] text-muted-foreground">Platforms I work across — where Asian brands win</div>
         <div className="mt-8 flex flex-wrap justify-center gap-3">
           {plats.map(p => (
-            <span key={p} className="rounded-full border border-orange-700/80 bg-orange-600/10 px-5 py-2 text-sm font-medium text-orange-200 shadow-[0_0_0_1px_rgba(179,83,9,0.25)]">{p}</span>
+            <span key={p} className="rounded-full border border-orange-700/80 bg-orange-600/10 px-5 py-2 text-sm font-medium text-orange-200 shadow-[0_0_0_1px_rgba(179,83,9,0.25)] transition-all duration-300 hover:border-orange-600 hover:bg-orange-600/20 hover:-translate-y-1">{p}</span>
           ))}
         </div>
       </div>
