@@ -353,8 +353,8 @@ function WorkExperience() {
                           <img
                             src={shopeeImages[index]}
                             alt={slide.title}
-                            width={7680}
-                            height={4320}
+                            width={2560}
+                            height={1440}
                             loading="eager"
                             decoding="async"
                             className="h-full w-full object-contain p-2 md:p-3 cursor-zoom-in"
@@ -387,8 +387,8 @@ function WorkExperience() {
                           <img
                             src={tiktokImages[index]}
                             alt={slide.title}
-                            width={7680}
-                            height={4320}
+                            width={2560}
+                            height={1440}
                             loading="eager"
                             decoding="async"
                             className="h-full w-full object-contain p-2 md:p-3 cursor-zoom-in"
