@@ -12,11 +12,13 @@ import shopeeNew3 from "@/assets/shopee-new-3.jpg";
 import shopeeNew4 from "@/assets/shopee-new-4.jpg";
 import shopeeNew5 from "@/assets/shopee-new-5.jpg";
 import shopeeCarousel1 from "@/assets/shopee-carousel-1.png";
+import shopee8k from "@/assets/shopee-sales-8k.png";
 import tiktokNew1 from "@/assets/tiktok-new-1.png";
 import tiktokNew2 from "@/assets/tiktok-new-2.png";
 import tiktokNew3 from "@/assets/tiktok-new-3.png";
 import tiktokNew4 from "@/assets/tiktok-new-4.png";
 import tiktokNew5 from "@/assets/tiktok-new-5.png";
+import tiktok8k from "@/assets/tiktok-sales-8k.png";
 import { Button } from "@/components/ui/button";
 import {
   Carousel,
@@ -171,7 +173,7 @@ function About() {
           <p className="mt-4 text-base md:text-lg text-muted-foreground">I’ve worked with clients across Malaysia, Singapore, and Indonesia, helping brands scale with precision and purpose. Whether it’s launching a product, optimizing Ads, or building a strong brand identity — I’m here to make your vision a reality.</p>
           <div className="mt-8 grid sm:grid-cols-2 gap-4">
             {skills.map(s => (
-              <div key={s.t} className="glass rounded-2xl p-5 border border-orange-700/30 hover:border-orange-700/80 transition-all duration-300">
+              <div key={s.t} className="glass rounded-2xl p-5 border border-orange-700/70 shadow-[0_0_0_1px_rgba(179,83,9,0.25)]">
                 <div className="font-semibold">{s.t}</div>
                 <div className="mt-1 text-sm text-muted-foreground">{s.d}</div>
               </div>
@@ -316,7 +318,7 @@ function WorkExperience() {
     { title: "Quarterly Ads Scale", subtitle: "RM182.8k sales • 6.6k orders • 6.25 ROAS", tag: "Quarterly Ads" },
     { title: "Shopee Sales Performance", subtitle: "RM51.1k sales • 1.9k orders • 6.68 ROAS", tag: "All CPC Ads" },
   ];
-  const shopeeImages = [shopeeNewUpdated1, shopeeNewUpdated2, shopeeNew3, shopeeNew4, shopeeNew5, shopeeCarousel1];
+  const shopeeImages = [shopee8k, shopee8k, shopee8k, shopee8k, shopee8k, shopee8k];
   const tiktokSlides = [
     { title: "TikTok GMV Max Campaign", subtitle: "RM86.6k GMV • 3.7k orders • 13.01x ROI", tag: "GMV Max" },
     { title: "Scale-up Ads Campaign", subtitle: "RM26.5k GMV • 1.25k orders • 8.88x ROI", tag: "Growth" },
@@ -325,7 +327,7 @@ function WorkExperience() {
     { title: "Long-term Store Scaling", subtitle: "RM588k GMV • 25.9k orders • 32.9k items sold", tag: "Scale Overview" },
     { title: "High-ROI Performance Mix", subtitle: "Optimized paid Ads + creator-driven campaigns", tag: "Live & Affiliate" },
   ];
-  const tiktokImages = [tiktokNew1, tiktokNew2, tiktokNew3, tiktokNew4, tiktokNew5, tiktokNew1];
+  const tiktokImages = [tiktok8k, tiktok8k, tiktok8k, tiktok8k, tiktok8k, tiktok8k];
 
   return (
     <section id="work-experience" className="py-24">
