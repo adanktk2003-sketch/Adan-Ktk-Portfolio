@@ -1,5 +1,4 @@
 import { FormEvent, useEffect, useState } from "react";
-import { createFileRoute } from "@tanstack/react-router";
 import {
   ArrowRight, Calendar, LineChart, Shield, Layers, Zap, Bell, BarChart3,
   ShoppingBag, Video, TrendingUp, Store, Target, Database, Mail, Phone, MapPin,
@@ -25,18 +24,6 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-
-export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Adan Khattak — E-commerce Growth & Shopee Ads Expert" },
-      { name: "description", content: "Shopee Ads Expert & growth consultant for all Asian countries with Shopee, TikTok Shop, and Lazada. Helping brands scale profitably." },
-      { property: "og:title", content: "Adan Khattak — Shopee Ads & E-commerce Expert" },
-      { property: "og:description", content: "Expert marketplace scaling (Shopee, TikTok Shop, Lazada) across Asian markets." },
-    ],
-  }),
-  component: Index,
-});
 
 function Nav() {
   return (
@@ -780,3 +767,5 @@ function Index() {
     </div>
   );
 }
+
+export default Index;
