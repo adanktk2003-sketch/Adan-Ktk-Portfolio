@@ -164,10 +164,7 @@ function About() {
           </div>
         </div>
         <div className="lg:col-span-7">
-          <div className="text-xs uppercase tracking-[0.3em] text-muted-foreground">About</div>
-          <div className="max-w-2xl">
-            <h2 className="mt-3 text-3xl md:text-4xl font-bold tracking-tight">Turning Businesses into Recognized Brands with Smart Creative Vision & Strategies</h2>
-          </div>
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tight">About</h2>
           <p className="mt-5 text-base md:text-lg text-muted-foreground">I'm Adan Khattak — a Digital Entrepreneur, Founder & CEO of Zenvault Ecom, and an e-commerce growth consultant specializing in scaling stores on Shopee, TikTok Shop, and Lazada for brands across all active Asian markets. As a Shopee Ads expert dedicated to maximizing ROI, I've spent the last five years helping sellers go from flat revenue to compounding monthly growth, with a playbook that pairs hard data with operator-level execution.</p>
           <p className="mt-4 text-base md:text-lg text-muted-foreground">I’ve worked with clients across Malaysia, Singapore, and Indonesia, helping brands scale with precision and purpose. Whether it’s launching a product, optimizing Ads, or building a strong brand identity — I’m here to make your vision a reality.</p>
           <div className="mt-8 grid sm:grid-cols-2 gap-4">
@@ -330,7 +327,7 @@ function WorkExperience() {
 
   return (
     <section id="work-experience" className="py-24">
-      <div className="container mx-auto px-6 max-w-7xl">
+      <div className="container mx-auto px-6">
         <div className="max-w-2xl">
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Work Experience</h2>
         </div>
@@ -580,8 +577,7 @@ function Testimonial() {
   return (
     <section className="py-24">
       <div className="container mx-auto px-6">
-        <div className="text-xs uppercase tracking-[0.3em] text-muted-foreground">Testimonials</div>
-        <h2 className="mt-3 text-4xl md:text-5xl font-bold tracking-tight max-w-2xl">Trusted by sellers building market-leading brands.</h2>
+        <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Testimonials</h2>
         <div className="mt-10 grid gap-6 lg:grid-cols-3">
           {testimonials.map((item) => (
             <div key={item.name} className="glass rounded-3xl p-8 h-full border border-orange-700/30 hover:border-orange-700/80 transition-all duration-300">
