@@ -2,9 +2,10 @@ import { FormEvent, useEffect, useState } from "react";
 import {
   ArrowRight, Calendar, LineChart, Shield, Layers, Zap, Bell, BarChart3,
   ShoppingBag, Video, TrendingUp, Store, Target, Database, Mail, Phone, MapPin,
-  Check, Linkedin, Facebook, Instagram, Music2, CheckCircle2,
+  Check, Linkedin, Facebook, Instagram, Music2, CheckCircle2, X,
 } from "lucide-react";
 import portrait from "@/assets/portrait.jpg";
+import portrait5k from "@/assets/portrait-5k.jpg";
 import shopeeNewUpdated1 from "@/assets/shopee-new-updated-1.png";
 import shopeeNewUpdated2 from "@/assets/shopee-new-updated-2.png";
 import shopeeNew3 from "@/assets/shopee-new-3.jpg";
@@ -106,15 +107,9 @@ function Hero() {
               <span className="text-white">{skillPrefix}</span>
               {skillSuffix && <span className="text-orange-400"> {skillSuffix}</span>}
             </p>
-            <div className="mt-8 flex flex-wrap justify-center gap-3">
-              <a href="#contact" className="inline-flex items-center gap-2 bg-gradient-primary text-primary-foreground rounded-full px-6 py-3 font-medium shadow-glow hover:opacity-90 transition">
-                <Calendar className="h-4 w-4" /> Book a Consultation <ArrowRight className="h-4 w-4" />
-              </a>
-            </div>
             <div className="mt-10 flex flex-wrap justify-center gap-x-8 gap-y-3 text-sm text-muted-foreground">
               <span className="inline-flex items-center gap-2"><Shield className="h-4 w-4 text-amber" /> 5+ Years Marketplace Experience</span>
               <span className="inline-flex items-center gap-2"><Layers className="h-4 w-4 text-cyan" /> 40+ Brands Scaled</span>
-              <span className="inline-flex items-center gap-2"><Zap className="h-4 w-4 text-primary" /> Performance-Obsessed</span>
             </div>
           </div>
 
@@ -123,15 +118,13 @@ function Hero() {
             <StatCard value="12.45" suffix="x" label="Average High-Performance ROAS" icon={BarChart3} />
             <StatCard value="145" suffix="%" prefix="+" label="Sales Growth" icon={TrendingUp} />
             <StatCard value="132.6" suffix="%" prefix="+" label="Revenue Growth" icon={BarChart3} />
-            <div className="col-span-2 flex items-center gap-4 mt-4">
-              <div className="flex items-center gap-3">
-                <Button size="lg" className="text-lg px-6 py-3" asChild>
-                  <a href="https://wa.me/923070736647" target="_blank" rel="noopener noreferrer">Hire me</a>
-                </Button>
-                <Button variant="outline" size="lg" className="text-lg px-6 py-3" asChild>
-                  <a href="#contact">Contact me</a>
-                </Button>
-              </div>
+            <div className="col-span-2 flex justify-center md:justify-start items-center gap-3 mt-4">
+              <Button size="lg" className="text-base md:text-lg px-5 md:px-6 py-3" asChild>
+                <a href="https://wa.me/923070736647" target="_blank" rel="noopener noreferrer">Hire me</a>
+              </Button>
+              <Button variant="outline" size="lg" className="text-base md:text-lg px-5 md:px-6 py-3" asChild>
+                <a href="#contact">Contact me</a>
+              </Button>
             </div>
           </div>
         </div>
@@ -154,7 +147,7 @@ function About() {
       <div className="container mx-auto px-6 grid lg:grid-cols-12 gap-12">
         <div className="lg:col-span-5">
           <div className="relative rounded-3xl overflow-hidden glass group">
-            <img src={portrait} alt="Adan Khattak — E-commerce Growth Consultant" className="w-full h-auto object-cover transition-transform duration-300 ease-out transform group-hover:scale-105" />
+            <img src={portrait5k} alt="Adan Khattak — E-commerce Growth Consultant" className="w-full h-auto object-cover transition-transform duration-300 ease-out transform group-hover:scale-105" />
             <span className="absolute inset-0 rounded-3xl pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-pulse" style={{ boxShadow: '0 0 0 4px rgba(56,189,248,0.12), 0 0 24px rgba(99,102,241,0.06)' }} />
             <div className="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-background via-background/70 to-transparent">
               <div className="flex items-center justify-between">
@@ -171,12 +164,14 @@ function About() {
         </div>
         <div className="lg:col-span-7">
           <div className="text-xs uppercase tracking-[0.3em] text-muted-foreground">About</div>
-          <h2 className="mt-3 text-4xl md:text-5xl font-bold tracking-tight">Turning Businesses into Recognized Brands with Smart Creative Vision & Strategies</h2>
-          <p className="mt-5 text-muted-foreground">I'm Adan Khattak — a Digital Entrepreneur, Founder & CEO of Zenvault Ecom, and an e-commerce growth consultant specializing in scaling stores on Shopee, TikTok Shop, and Lazada for brands across all active Asian markets. As a Shopee Ads expert dedicated to maximizing ROI, I've spent the last five years helping sellers go from flat revenue to compounding monthly growth, with a playbook that pairs hard data with operator-level execution.</p>
-          <p className="mt-4 text-muted-foreground">I’ve worked with clients across Malaysia, Singapore, and Indonesia, helping brands scale with precision and purpose. Whether it’s launching a product, optimizing Ads, or building a strong brand identity — I’m here to make your vision a reality.</p>
+          <div className="max-w-2xl">
+            <h2 className="mt-3 text-3xl md:text-4xl font-bold tracking-tight">Turning Businesses into Recognized Brands with Smart Creative Vision & Strategies</h2>
+          </div>
+          <p className="mt-5 text-base md:text-lg text-muted-foreground">I'm Adan Khattak — a Digital Entrepreneur, Founder & CEO of Zenvault Ecom, and an e-commerce growth consultant specializing in scaling stores on Shopee, TikTok Shop, and Lazada for brands across all active Asian markets. As a Shopee Ads expert dedicated to maximizing ROI, I've spent the last five years helping sellers go from flat revenue to compounding monthly growth, with a playbook that pairs hard data with operator-level execution.</p>
+          <p className="mt-4 text-base md:text-lg text-muted-foreground">I’ve worked with clients across Malaysia, Singapore, and Indonesia, helping brands scale with precision and purpose. Whether it’s launching a product, optimizing Ads, or building a strong brand identity — I’m here to make your vision a reality.</p>
           <div className="mt-8 grid sm:grid-cols-2 gap-4">
             {skills.map(s => (
-              <div key={s.t} className="glass rounded-2xl p-5 hover:border-primary/40 transition">
+              <div key={s.t} className="glass rounded-2xl p-5 border border-orange-700/30 hover:border-orange-700/80 transition-all duration-300">
                 <div className="font-semibold">{s.t}</div>
                 <div className="mt-1 text-sm text-muted-foreground">{s.d}</div>
               </div>
@@ -197,19 +192,19 @@ function Education() {
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Education</h2>
         </div>
         <div className="mt-12 grid gap-5 md:grid-cols-3">
-          <div className="glass rounded-3xl p-7 group relative overflow-hidden transition-transform duration-300 ease-out transform group-hover:-translate-y-2">
+          <div className="glass rounded-3xl p-7 group relative overflow-hidden transition-transform duration-300 ease-out transform group-hover:-translate-y-2 border border-orange-700/30 hover:border-orange-700/80 transition-all duration-300">
             <div className="text-xs uppercase tracking-widest text-amber">Degree</div>
             <h3 className="mt-5 text-2xl font-semibold">Bachelor's in Software Engineering</h3>
             <p className="mt-2 text-muted-foreground">ICUP Peshawar — 2025</p>
             <span className="absolute inset-0 rounded-3xl pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-pulse" style={{ boxShadow: '0 0 0 4px rgba(56,189,248,0.06), 0 0 20px rgba(99,102,241,0.04)' }} />
           </div>
-          <div className="glass rounded-3xl p-7 group relative overflow-hidden transition-transform duration-300 ease-out transform group-hover:-translate-y-2">
+          <div className="glass rounded-3xl p-7 group relative overflow-hidden transition-transform duration-300 ease-out transform group-hover:-translate-y-2 border border-orange-700/30 hover:border-orange-700/80 transition-all duration-300">
             <div className="text-xs uppercase tracking-widest text-amber">Currently</div>
             <h3 className="mt-5 text-2xl font-semibold">Master's in Artificial Intelligence</h3>
             <p className="mt-2 text-muted-foreground">UET Peshawar — 2026</p>
             <span className="absolute inset-0 rounded-3xl pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-pulse" style={{ boxShadow: '0 0 0 4px rgba(56,189,248,0.06), 0 0 20px rgba(99,102,241,0.04)' }} />
           </div>
-          <div className="glass rounded-3xl p-7 group relative overflow-hidden transition-transform duration-300 ease-out transform group-hover:-translate-y-2">
+          <div className="glass rounded-3xl p-7 group relative overflow-hidden transition-transform duration-300 ease-out transform group-hover:-translate-y-2 border border-orange-700/30 hover:border-orange-700/80 transition-all duration-300">
             <div className="text-xs uppercase tracking-widest text-amber">Certifications</div>
             <h3 className="mt-5 text-2xl font-semibold">Webdo & DigiSkills</h3>
             <p className="mt-2 text-muted-foreground">B2B course from Webdo Solutions and Digital Marketing course from DigiSkills.</p>
@@ -217,12 +212,12 @@ function Education() {
           </div>
         </div>
         <div className="mt-10 grid gap-5 md:grid-cols-2">
-          <div className="glass rounded-3xl p-7 group relative overflow-hidden transition-transform duration-300 ease-out transform group-hover:-translate-y-2">
+          <div className="glass rounded-3xl p-7 group relative overflow-hidden transition-transform duration-300 ease-out transform group-hover:-translate-y-2 border border-orange-700/30 hover:border-orange-700/80 transition-all duration-300">
             <div className="text-xs uppercase tracking-widest text-amber">Marketplace Experience</div>
             <p className="mt-4 text-muted-foreground">No formal Shopee course completed — I have gained practical experience through working with multiple Clients, have read Shopee articles, and 5 years of hands-on work and marketplace execution.</p>
             <span className="absolute inset-0 rounded-3xl pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-pulse" style={{ boxShadow: '0 0 0 4px rgba(56,189,248,0.06), 0 0 20px rgba(99,102,241,0.04)' }} />
           </div>
-          <div className="glass rounded-3xl p-7 group relative overflow-hidden transition-transform duration-300 ease-out transform group-hover:-translate-y-2">
+          <div className="glass rounded-3xl p-7 group relative overflow-hidden transition-transform duration-300 ease-out transform group-hover:-translate-y-2 border border-orange-700/30 hover:border-orange-700/80 transition-all duration-300">
             <div className="text-xs uppercase tracking-widest text-amber">Availability</div>
             <p className="mt-4 text-muted-foreground">Available 24/7 to support marketplace acceleration, campaign launches, and live commerce execution.</p>
             <span className="absolute inset-0 rounded-3xl pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-pulse" style={{ boxShadow: '0 0 0 4px rgba(56,189,248,0.06), 0 0 20px rgba(99,102,241,0.04)' }} />
@@ -250,7 +245,7 @@ function Services() {
         </div>
         <div className="mt-12 grid md:grid-cols-2 gap-5">
           {items.map(it => (
-            <div key={it.title} className="glass rounded-3xl p-7 group hover:border-primary/40 transition relative overflow-hidden">
+            <div key={it.title} className="glass rounded-3xl p-7 group border border-orange-700/30 hover:border-orange-700/80 transition-all duration-300 relative overflow-hidden">
               <div className="flex items-center justify-between">
                 <span className="text-xs uppercase tracking-widest text-amber">{it.tag}</span>
                 <div className="h-11 w-11 rounded-xl bg-gradient-primary grid place-items-center text-primary-foreground shadow-glow">
@@ -311,6 +306,8 @@ function Skills() {
 }
 
 function WorkExperience() {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
   const shopeeSlides = [
     { title: "Monthly Ads Performance", subtitle: "RM48k GMV • 1.6k orders • 5.93 ROAS", tag: "Monthly Ads" },
     { title: "Shopee Daily Ads Performance", subtitle: "RM2.3k GMV • 36 orders • 10.00 ROAS", tag: "Daily Ads" },
@@ -340,20 +337,29 @@ function WorkExperience() {
         <div className="mt-12 flex flex-col gap-12">
           <div>
             <div className="text-xs uppercase tracking-widest text-amber">Shopee Sales</div>
-            <div className="mt-6 overflow-hidden rounded-[2rem] border border-border bg-muted/30 relative">
+            <div className="mt-6 overflow-hidden rounded-[0.75rem] border border-border bg-muted/30 relative">
               <Carousel className="relative">
                 <CarouselContent className="flex gap-4">
                   {shopeeSlides.map((slide, index) => (
                     <CarouselItem key={slide.title} className="min-w-full">
-                      <div className="overflow-hidden rounded-[1.75rem] border border-border bg-slate-950/10 transition-transform duration-300 hover:-translate-y-1">
-                        <div className="relative aspect-[16/10] md:aspect-[2.2/1] w-full">
+                      <button
+                        type="button"
+                        onClick={() => setSelectedImage(shopeeImages[index])}
+                        className="block w-full overflow-hidden rounded-[0.75rem] border border-orange-700/30 bg-slate-950/10 text-left transition-transform duration-300 hover:-translate-y-1"
+                      >
+                        <div className="relative aspect-[16/10] md:aspect-[2.2/1] w-full bg-background/80">
                           <img
                             src={shopeeImages[index]}
                             alt={slide.title}
-                            className="h-full w-full object-cover"
+                            width={2560}
+                            height={1440}
+                            loading="eager"
+                            decoding="async"
+                            className="h-full w-full object-contain p-2 md:p-3 cursor-zoom-in"
+                            sizes="(max-width: 768px) 100vw, 1200px"
                           />
                         </div>
-                      </div>
+                      </button>
                     </CarouselItem>
                   ))}
                 </CarouselContent>
@@ -365,20 +371,29 @@ function WorkExperience() {
 
           <div>
             <div className="text-xs uppercase tracking-widest text-cyan">TikTokShop Sales</div>
-            <div className="mt-6 overflow-hidden rounded-[2rem] border border-border bg-muted/30 relative">
+            <div className="mt-6 overflow-hidden rounded-[0.75rem] border border-border bg-muted/30 relative">
               <Carousel className="relative">
                 <CarouselContent className="flex gap-4">
                   {tiktokSlides.map((slide, index) => (
                     <CarouselItem key={slide.title} className="min-w-full">
-                      <div className="overflow-hidden rounded-[1.75rem] border border-border bg-slate-950/10 transition-transform duration-300 hover:-translate-y-1">
-                        <div className="relative aspect-[16/10] md:aspect-[2.2/1] w-full">
+                      <button
+                        type="button"
+                        onClick={() => setSelectedImage(tiktokImages[index])}
+                        className="block w-full overflow-hidden rounded-[0.75rem] border border-orange-700/30 bg-slate-950/10 text-left transition-transform duration-300 hover:-translate-y-1"
+                      >
+                        <div className="relative aspect-[16/10] md:aspect-[2.2/1] w-full bg-background/80">
                           <img
                             src={tiktokImages[index]}
                             alt={slide.title}
-                            className="h-full w-full object-cover"
+                            width={2560}
+                            height={1440}
+                            loading="eager"
+                            decoding="async"
+                            className="h-full w-full object-contain p-2 md:p-3 cursor-zoom-in"
+                            sizes="(max-width: 768px) 100vw, 1200px"
                           />
                         </div>
-                      </div>
+                      </button>
                     </CarouselItem>
                   ))}
                 </CarouselContent>
@@ -389,6 +404,29 @@ function WorkExperience() {
           </div>
         </div>
       </div>
+
+      {selectedImage && (
+        <div
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/85 px-4 py-6 backdrop-blur-sm"
+          onClick={() => setSelectedImage(null)}
+        >
+          <div className="relative max-h-[90vh] w-full max-w-6xl overflow-hidden rounded-[1.25rem] border border-orange-700/40 bg-background/95 shadow-2xl">
+            <button
+              type="button"
+              onClick={() => setSelectedImage(null)}
+              className="absolute right-3 top-3 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-black/70 text-white transition hover:bg-black/90"
+              aria-label="Close image"
+            >
+              <X className="h-5 w-5" />
+            </button>
+            <img
+              src={selectedImage}
+              alt="Expanded portfolio preview"
+              className="max-h-[90vh] w-full object-contain"
+            />
+          </div>
+        </div>
+      )}
     </section>
   );
 }
@@ -401,16 +439,16 @@ function CaseStudies() {
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Case Studies</h2>
         </div>
         <div className="mt-12 grid lg:grid-cols-2 gap-6">
-          <div className="glass rounded-3xl p-7 flex flex-col justify-between">
+          <div className="glass rounded-3xl p-7 flex flex-col justify-between border border-orange-700/30 hover:border-orange-700/80 transition-all duration-300 hover:-translate-y-2">
             <div>
               <div className="text-xs uppercase tracking-widest text-amber">Shopee Ads · Past 3 Months</div>
               <h3 className="mt-3 text-2xl font-semibold">Home Supplies Brand</h3>
               <p className="mt-2 text-muted-foreground">A regional seller stuck at flat ROAS and rising CPC. We rebuilt campaign structure, search-mapped the top SKUs and ran daily bid governance.</p>
-              <div className="mt-6 grid grid-cols-3 gap-3 text-center">
+              <div className="mt-6 grid grid-cols-1 gap-3 text-center sm:grid-cols-3">
                 {[["RM182.8k", "Total Ads Sales"], ["6.25x", "Average ROAS"], ["6.6k", "Total Orders"]].map(([v, l]) => (
-                  <div key={l} className="rounded-2xl bg-secondary p-4">
-                    <div className="text-xl font-bold text-gradient">{v}</div>
-                    <div className="text-xs text-muted-foreground mt-1">{l}</div>
+                  <div key={l} className="rounded-2xl bg-secondary p-3 sm:p-4 min-h-[88px] flex flex-col justify-center">
+                    <div className="text-lg sm:text-xl font-bold text-gradient break-words">{v}</div>
+                    <div className="text-[11px] sm:text-xs text-muted-foreground mt-1 leading-tight">{l}</div>
                   </div>
                 ))}
               </div>
@@ -446,16 +484,16 @@ function CaseStudies() {
             </div>
           </div>
 
-          <div className="glass rounded-3xl p-7 flex flex-col justify-between">
+          <div className="glass rounded-3xl p-7 flex flex-col justify-between border border-orange-700/30 hover:border-orange-700/80 transition-all duration-300 hover:-translate-y-2">
             <div>
               <div className="text-xs uppercase tracking-widest text-cyan">TikTok Shop · Feb – May 2026</div>
               <h3 className="mt-3 text-2xl font-semibold">Home & Lifestyle Seller — TikTok Shop MY</h3>
               <p className="mt-2 text-muted-foreground">Launched a creator + paid amplification engine alongside live commerce. Compounding sales week-over-week with a controlled cost structure.</p>
-              <div className="mt-6 grid grid-cols-3 gap-3 text-center">
+              <div className="mt-6 grid grid-cols-1 gap-3 text-center sm:grid-cols-3">
                 {[["RM588k", "Total GMV"], ["32.9k", "Items Sold"], ["25.9k", "Total Orders"]].map(([v, l]) => (
-                  <div key={l} className="rounded-2xl bg-secondary p-4">
-                    <div className="text-xl font-bold text-gradient">{v}</div>
-                    <div className="text-xs text-muted-foreground mt-1">{l}</div>
+                  <div key={l} className="rounded-2xl bg-secondary p-3 sm:p-4 min-h-[88px] flex flex-col justify-center">
+                    <div className="text-lg sm:text-xl font-bold text-gradient break-words">{v}</div>
+                    <div className="text-[11px] sm:text-xs text-muted-foreground mt-1 leading-tight">{l}</div>
                   </div>
                 ))}
               </div>
@@ -505,7 +543,7 @@ function Platforms() {
         <div className="text-center text-xs uppercase tracking-[0.3em] text-muted-foreground">Platforms I work across — where Asian brands win</div>
         <div className="mt-8 flex flex-wrap justify-center gap-3">
           {plats.map(p => (
-            <span key={p} className="glass rounded-full px-5 py-2 text-sm">{p}</span>
+            <span key={p} className="rounded-full border border-orange-700/70 bg-background/60 px-5 py-2 text-sm text-foreground shadow-sm transition-all duration-300 hover:border-orange-600 hover:bg-orange-950/20">{p}</span>
           ))}
         </div>
       </div>
@@ -517,22 +555,45 @@ function Platforms() {
 
 
 function Testimonial() {
+  const testimonials = [
+    {
+      quote: "Adan rebuilt our Shopee account from the ground up. Within four months, our ROAS jumped from 3.1 to 7.4 and we were finally scaling without bleeding margin. He thinks like an operator, not just a media buyer.",
+      initials: "LW",
+      name: "Lim Wei Jian",
+      role: "Founder · Beauty Brand (Shopee Mall)",
+    },
+    {
+      quote: "His TikTok Shop strategy brought our live campaigns to life and made our content feel more commercial without losing the brand voice.",
+      initials: "AR",
+      name: "Aisha Rahman",
+      role: "Brand Lead · Home & Lifestyle Seller",
+    },
+    {
+      quote: "Clear execution, smart reporting, and real growth. He made marketplace complexity feel manageable and gave us a system we could scale.",
+      initials: "SN",
+      name: "Sophie Nguyen",
+      role: "Operations Director · Regional FMCG Brand",
+    },
+  ];
+
   return (
     <section className="py-24">
       <div className="container mx-auto px-6">
         <div className="text-xs uppercase tracking-[0.3em] text-muted-foreground">Testimonials</div>
         <h2 className="mt-3 text-4xl md:text-5xl font-bold tracking-tight max-w-2xl">Trusted by sellers building market-leading brands.</h2>
-        <div className="mt-10 glass rounded-3xl p-8 md:p-12 max-w-3xl">
-          <p className="text-xl md:text-2xl leading-relaxed">
-            "Adan rebuilt our Shopee account from the ground up. Within four months, our ROAS jumped from 3.1 to 7.4 and we were finally scaling without bleeding margin. He thinks like an operator, not just a media buyer."
-          </p>
-          <div className="mt-6 flex items-center gap-4">
-            <div className="h-12 w-12 rounded-full bg-gradient-primary grid place-items-center font-bold">LW</div>
-            <div>
-              <div className="font-semibold">Lim Wei Jian</div>
-              <div className="text-sm text-muted-foreground">Founder · Beauty Brand (Shopee Mall)</div>
+        <div className="mt-10 grid gap-6 lg:grid-cols-3">
+          {testimonials.map((item) => (
+            <div key={item.name} className="glass rounded-3xl p-8 h-full border border-orange-700/30 hover:border-orange-700/80 transition-all duration-300">
+              <p className="text-lg leading-relaxed text-muted-foreground">“{item.quote}”</p>
+              <div className="mt-6 flex items-center gap-4">
+                <div className="h-12 w-12 rounded-full bg-gradient-primary grid place-items-center font-bold">{item.initials}</div>
+                <div>
+                  <div className="font-semibold">{item.name}</div>
+                  <div className="text-sm text-muted-foreground">{item.role}</div>
+                </div>
+              </div>
             </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
@@ -606,21 +667,21 @@ function Contact() {
         <div>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight">Contact</h2>
           <div className="mt-8 space-y-4">
-            <a href="mailto:adanktk2003@gmail.com" className="flex items-center gap-4 glass rounded-2xl p-4 hover:border-primary/40 transition">
+            <a href="mailto:adanktk2003@gmail.com" className="flex items-center gap-4 glass rounded-2xl p-4 border border-orange-700/30 hover:border-orange-700/80 transition-all duration-300">
               <div className="h-11 w-11 rounded-xl bg-primary/15 grid place-items-center text-primary"><Mail className="h-5 w-5" /></div>
               <div>
                 <div className="text-xs text-muted-foreground">Email</div>
                 <div className="font-medium">adanktk2003@gmail.com</div>
               </div>
             </a>
-            <a href="tel:+60112394 2413" className="flex items-center gap-4 glass rounded-2xl p-4 hover:border-primary/40 transition">
+            <a href="tel:+60112394 2413" className="flex items-center gap-4 glass rounded-2xl p-4 border border-orange-700/30 hover:border-orange-700/80 transition-all duration-300">
               <div className="h-11 w-11 rounded-xl bg-cyan/15 grid place-items-center text-cyan"><Phone className="h-5 w-5" /></div>
               <div>
                 <div className="text-xs text-muted-foreground">Malaysia 🇲🇾</div>
                 <div className="font-medium">+60 11-2394 2413</div>
               </div>
             </a>
-            <a href="tel:+923070736647" className="flex items-center gap-4 glass rounded-2xl p-4 hover:border-primary/40 transition">
+            <a href="tel:+923070736647" className="flex items-center gap-4 glass rounded-2xl p-4 border border-orange-700/30 hover:border-orange-700/80 transition-all duration-300">
               <div className="h-11 w-11 rounded-xl bg-amber/15 grid place-items-center text-amber"><Phone className="h-5 w-5" /></div>
               <div>
                 <div className="text-xs text-muted-foreground">Pakistan 🇵🇰</div>
@@ -739,7 +800,7 @@ function Contact() {
 function Footer() {
   return (
     <footer className="border-t border-border py-10">
-      <div className="container mx-auto px-6 flex flex-wrap items-center justify-between gap-4 text-sm text-muted-foreground">
+      <div className="container mx-auto px-6 flex flex-col items-center justify-center gap-3 text-center text-sm text-muted-foreground">
         <div>© {new Date().getFullYear()} Adan Khattak. All rights reserved.</div>
         <div className="flex items-center gap-2"><Database className="h-4 w-4" /> Shopee Ads Expert & Growth Consultant for Asian Markets</div>
       </div>
