@@ -12,7 +12,6 @@ import shopeeNew3 from "@/assets/shopee-new-3.jpg";
 import shopeeNew4 from "@/assets/shopee-new-4.jpg";
 import shopeeNew5 from "@/assets/shopee-new-5.jpg";
 import shopeeCarousel1 from "@/assets/shopee-carousel-1.png";
-import shopee8k from "@/assets/shopee-sales-8k.png";
 import tiktokNew1 from "@/assets/tiktok-new-1.png";
 import tiktokNew2 from "@/assets/tiktok-new-2.png";
 import tiktokNew3 from "@/assets/tiktok-new-3.png";
@@ -318,7 +317,7 @@ function WorkExperience() {
     { title: "Quarterly Ads Scale", subtitle: "RM182.8k sales • 6.6k orders • 6.25 ROAS", tag: "Quarterly Ads" },
     { title: "Shopee Sales Performance", subtitle: "RM51.1k sales • 1.9k orders • 6.68 ROAS", tag: "All CPC Ads" },
   ];
-  const shopeeImages = [shopee8k, shopee8k, shopee8k, shopee8k, shopee8k, shopee8k];
+  const shopeeImages = [shopeeNewUpdated1, shopeeNewUpdated2, shopeeNew3, shopeeNew4, shopeeNew5, shopeeCarousel1];
   const tiktokSlides = [
     { title: "TikTok GMV Max Campaign", subtitle: "RM86.6k GMV • 3.7k orders • 13.01x ROI", tag: "GMV Max" },
     { title: "Scale-up Ads Campaign", subtitle: "RM26.5k GMV • 1.25k orders • 8.88x ROI", tag: "Growth" },
@@ -327,7 +326,7 @@ function WorkExperience() {
     { title: "Long-term Store Scaling", subtitle: "RM588k GMV • 25.9k orders • 32.9k items sold", tag: "Scale Overview" },
     { title: "High-ROI Performance Mix", subtitle: "Optimized paid Ads + creator-driven campaigns", tag: "Live & Affiliate" },
   ];
-  const tiktokImages = [tiktok8k, tiktok8k, tiktok8k, tiktok8k, tiktok8k, tiktok8k];
+  const tiktokImages = [tiktokNew1, tiktokNew2, tiktokNew3, tiktokNew4, tiktokNew5, tiktok8k];
 
   return (
     <section id="work-experience" className="py-24">
