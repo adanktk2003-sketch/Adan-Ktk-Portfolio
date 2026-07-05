@@ -34,7 +34,7 @@ function Nav() {
           <span className="text-xl md:text-2xl font-black tracking-tight text-white group-hover:text-primary transition-colors duration-300">Adan Khattak</span>
         </a>
         <div className="hidden md:flex items-center gap-6 mx-auto text-sm text-muted-foreground">
-          {["About", "Services", "Skills", "Case Studies", "Contact"].map(l => (
+          {['About', 'Services', 'Skills', 'Contact'].map(l => (
             <a key={l} href={`#${l.toLowerCase().replace(" ", "-")}`} className="hover:text-foreground transition-colors">{l}</a>
           ))}
         </div>
@@ -819,7 +819,6 @@ function Index() {
         <Services />
         <Skills />
         <WorkExperience />
-        <CaseStudies />
         <Platforms />
         <Testimonial />
         <Contact />

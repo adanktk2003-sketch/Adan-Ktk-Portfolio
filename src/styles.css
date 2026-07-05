@@ -66,11 +66,17 @@
 
 @layer base {
   * { border-color: var(--color-border); }
-  html { scroll-behavior: smooth; }
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
     font-family: 'Inter', system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
     -webkit-font-smoothing: antialiased;
   }
 }
@@ -81,6 +87,21 @@
       linear-gradient(var(--grid-color) 1px, transparent 1px),
       linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
     background-size: 56px 56px;
+  }
+
+  [class*="rounded-3xl"][class*="border-orange-700/30"],
+  [class*="rounded-2xl"][class*="border-orange-700/30"] {
+    transition: none !important;
+  }
+
+  [class*="rounded-3xl"][class*="border-orange-700/30"]:hover,
+  [class*="rounded-2xl"][class*="border-orange-700/30"]:hover {
+    border-color: rgb(179 83 9 / 0.3) !important;
+    transform: none !important;
+  }
+
+  .group:hover .group-hover\:-translate-y-2 {
+    transform: none !important;
   }
   .text-gradient {
     background: var(--gradient-text);
@@ -163,8 +184,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50px;
-    height: 50px;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
     color: #4d4d4d;
     background-color: #fff;
@@ -177,8 +198,8 @@
   .social-icon-link svg {
     position: relative;
     z-index: 1;
-    width: 1.875rem;
-    height: 1.875rem;
+    width: 1.4rem;
+    height: 1.4rem;
   }
   .social-fill {
     position: absolute;
