@@ -70,7 +70,7 @@ function StatCard({ value, label, icon: Icon, prefix, suffix }: { value: string;
 function Hero() {
   const skills = [
     "I am Shopee Ads Expert",
-    "I manage TikTokShop GMV Max Ads",
+    "I manage TikTokShop Ads",
     "I am Problem Solver",
     "I am Brand Builder",
   ];
@@ -137,7 +137,7 @@ function Hero() {
 function About() {
   const skills = [
     { t: "Shopee Ads", d: "Expert-level Shop Ads, Product ads & Live Ads optimized for maximum ROAS across Asia." },
-    { t: "TikTok Shop GMV MAX Ads", d: "Affiliate, Live, Video, and Sponsored Solutions, Content Strategy & Scaling Malaysian brands" },
+    { t: "TikTok Shop Ads", d: "Affiliate, Live, Video, and Sponsored Solutions, Content Strategy & Scaling Malaysian brands" },
     { t: "Lazada Ads Management", d: "Sponsored Product Ads, Sponsored Discovery Ads, Sponsored Store Ads, LazLive Ads, Affiliate Ads, Display/Banner Ads, Voucher Campaign Promotions" },
     { t: "Store Optimization", d: "Listing Optimization, Conversion, A+ Content, Ads Management and search-rank optimization for marketplaces." },
     { t: "Marketplace Strategy", d: "Category positioning, pricing, and assortment strategy for growth." },
@@ -232,7 +232,7 @@ function Education() {
 function Services() {
   const items = [
     { tag: "Marketplace", icon: ShoppingBag, title: "Shopee Management", desc: "", points: ["Shopee Campaign Management", "Campaign Optimization", "Product Research", "Keyword Research", "Competitor Analysis", "Listing Creation & SEO", "A+ Content", "Listing Images", "Use of AI Tools", "ROAS Improvement", "Affiliate Marketing"] },
-    { tag: "Social Commerce", icon: Video, title: "TiktokShop Management", desc: "", points: ["Listing Optimization", "Product Hunting", "TiktokShop GMV Max Ads", "TiktokShop Spark Ads", "Affiliate Outreach", "Affiliate Marketing Strategy Plan", "Live Ads Strategy for Live Streaming", "Maximizing 10x ROI"] },
+    { tag: "Social Commerce", icon: Video, title: "TiktokShop Management", desc: "", points: ["Listing Optimization", "Product Hunting", "TiktokShop Ads", "TiktokShop Spark Ads", "Affiliate Outreach", "Affiliate Marketing Strategy Plan", "Live Ads Strategy for Live Streaming", "Maximizing 10x ROI"] },
     { tag: "Marketplace", icon: ShoppingBag, title: "Lazada Management", desc: "", points: ["Sponsored Products Ads", "Sponsored Shop Ads", "Discovery Ads", "Campaign & Voucher Strategy", "Pricing & Competitor Analysis", "Inventory Management"] },
     { tag: "Conversion", icon: Store, title: "Store Optimization", desc: "", points: ["Storefront Branding & Design", "Analytics & Performance Tracking", "Store Audits", "A to Z Management"] },
     { tag: "Strategy", icon: Target, title: "Consultancy", desc: "", points: ["Strategic Planning", "Brand Positioning", "Training & Team Leadership", "1 to 1 Mentorship Plan"] },
