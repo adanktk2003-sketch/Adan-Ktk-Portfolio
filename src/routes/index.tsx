@@ -148,7 +148,7 @@ function About() {
     <section id="about" className="py-24 relative">
       <div className="container mx-auto px-6 grid lg:grid-cols-12 gap-12">
         <div className="lg:col-span-5">
-          <div className="relative rounded-3xl overflow-hidden glass group">
+          <div className="relative rounded-3xl overflow-hidden glass group border border-orange-700/70 shadow-[0_0_0_1px_rgba(179,83,9,0.25)] transition-all duration-300 hover:border-orange-600 hover:-translate-y-1">
             <img src={portrait5k} alt="Adan Khattak — E-commerce Growth Consultant" className="w-full h-auto object-cover transition-transform duration-300 ease-out transform group-hover:scale-105" />
             <span className="absolute inset-0 rounded-3xl pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-pulse" style={{ boxShadow: '0 0 0 4px rgba(56,189,248,0.12), 0 0 24px rgba(99,102,241,0.06)' }} />
             <div className="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-background via-background/70 to-transparent">
@@ -173,7 +173,7 @@ function About() {
           <p className="mt-4 text-base md:text-lg text-muted-foreground">I’ve worked with clients across Malaysia, Singapore, and Indonesia, helping brands scale with precision and purpose. Whether it’s launching a product, optimizing Ads, or building a strong brand identity — I’m here to make your vision a reality.</p>
           <div className="mt-8 grid sm:grid-cols-2 gap-4">
             {skills.map(s => (
-              <div key={s.t} className="glass rounded-2xl p-5 border border-orange-700/70 shadow-[0_0_0_1px_rgba(179,83,9,0.25)]">
+              <div key={s.t} className="glass rounded-2xl p-5 border border-orange-700/70 shadow-[0_0_0_1px_rgba(179,83,9,0.25)] transition-all duration-300 hover:border-orange-600 hover:-translate-y-1">
                 <div className="font-semibold">{s.t}</div>
                 <div className="mt-1 text-sm text-muted-foreground">{s.d}</div>
               </div>
