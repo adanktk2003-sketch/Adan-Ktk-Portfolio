@@ -6,13 +6,12 @@ import {
 } from "lucide-react";
 import portrait from "@/assets/portrait.jpg";
 import portrait5k from "@/assets/portrait-5k.jpg";
-import shopeeNewUpdated1 from "@/assets/shopee-new-updated-1.png";
+import shopeeNew1 from "@/assets/shopee-new-1.png";
+import shopeeNew2 from "@/assets/shopee-new-2.png";
 import shopeeNewUpdated2 from "@/assets/shopee-new-updated-2.png";
 import shopeeNew3 from "@/assets/shopee-new-3.jpg";
-import shopeeNew4 from "@/assets/shopee-new-4.jpg";
 import shopeeNew5 from "@/assets/shopee-new-5.jpg";
-import shopeeCarousel1 from "@/assets/shopee-carousel-1.png";
-import tiktokNew1 from "@/assets/tiktok-new-1.png";
+import shopeeSales8k from "@/assets/shopee-sales-8k.png";
 import tiktokNew2 from "@/assets/tiktok-new-2.png";
 import tiktokNew3 from "@/assets/tiktok-new-3.png";
 import tiktokNew4 from "@/assets/tiktok-new-4.png";
@@ -314,16 +313,15 @@ function WorkExperience() {
     { title: "Quarterly Ads Scale", subtitle: "RM182.8k sales • 6.6k orders • 6.25 ROAS", tag: "Quarterly Ads" },
     { title: "Shopee Sales Performance", subtitle: "RM51.1k sales • 1.9k orders • 6.68 ROAS", tag: "All CPC Ads" },
   ];
-  const shopeeImages = [shopeeNewUpdated1, shopeeNewUpdated2, shopeeNew3, shopeeNew4, shopeeNew5, shopeeCarousel1];
+  const shopeeImages = [shopeeNew1, shopeeNew2, shopeeNewUpdated2, shopeeNew3, shopeeNew5, shopeeSales8k];
   const tiktokSlides = [
-    { title: "TikTok GMV Max Campaign", subtitle: "RM86.6k GMV • 3.7k orders • 13.01x ROI", tag: "GMV Max" },
     { title: "Scale-up Ads Campaign", subtitle: "RM26.5k GMV • 1.25k orders • 8.88x ROI", tag: "Growth" },
     { title: "Targeted Ads Optimization", subtitle: "RM53.7k GMV • 2.2k orders • 12.14x ROI", tag: "Optimization" },
     { title: "Seller Center Performance", subtitle: "RM127.6k GMV • 6.7k items sold • 86.7% growth", tag: "Shop Overview" },
     { title: "Long-term Store Scaling", subtitle: "RM588k GMV • 25.9k orders • 32.9k items sold", tag: "Scale Overview" },
     { title: "High-ROI Performance Mix", subtitle: "Optimized paid Ads + creator-driven campaigns", tag: "Live & Affiliate" },
   ];
-  const tiktokImages = [tiktokNew1, tiktokNew2, tiktokNew3, tiktokNew4, tiktokNew5, tiktok8k];
+  const tiktokImages = [tiktokNew2, tiktokNew3, tiktokNew4, tiktokNew5, tiktok8k];
 
   return (
     <section id="work-experience" className="py-24">
